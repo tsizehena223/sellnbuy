@@ -1,0 +1,15 @@
+header a button {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+}
+
+.button {
+    border-radius: 20px;
+}
+
+* {
+    margin: 0 1%;
+    background-color: rgb(6, 11, 41);
+    color: aliceblue;
+}

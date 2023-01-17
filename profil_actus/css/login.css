@@ -1,0 +1,217 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(0, black, #151680, black);
+	display: flex;
+	justify-content: center;
+}
+
+.container {   
+	position: relative;
+	top: 60px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	max-height: 650px;
+	max-width: 800px;
+	border: 2px solid #344378;
+	border-radius: 10px;
+	padding: 6% 4% 6% 4% ; 
+	animation: opa 1.8s ease-in-out 0s 1 alternate;
+}
+
+@keyframes opa {
+	from {filter: opacity(0); transform: rotate(40deg);}
+	to {filter: opacity(1); transform: rotate(0deg);}
+}
+
+.image {
+	max-height: 180px;
+	max-width: 180px;
+	border: 2px solid yellow;
+	border-radius: 50%;
+	position: relative;
+	left: 5%;
+}
+
+.h1 {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-style: italic;
+	border-bottom: 2px solid skyblue;
+	margin-right: 54%;
+}
+
+.h3, .signup {
+	 text-align: center;
+	 font-style: italic;
+	 font-family: Poppins, sans-serif;
+}
+
+.h1, .h3, .signup {
+	color: white;
+}
+
+.signup {
+	font-size: 0.77em;
+	padding-left: 4%;
+}
+
+.contacts {
+	color: white;
+	width: 30%;
+	position: relative;
+	left: 4%;
+	margin: 6% 6% 0 0;
+	font-size: 1.2em;
+}
+
+.contacts img {
+	height: 14%;
+	width: 14%;
+	border-radius: 50%;
+}
+
+/* To avoid flatting images I used align-items property */
+ul {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+} 
+
+/* To align elements between li tags */
+li {
+	display: flex;
+	/* align-items: center; */
+} 
+
+li img {
+	margin: 0 4% 4% 0;
+}
+
+a {
+	color: white;
+	font-style: italic;
+}
+
+a:hover {
+	color: yellow;
+}
+
+fieldset{
+	border: 3px solid #115E5E;
+	border-radius: 10px;
+	width: 50%;
+	background: linear-gradient(10deg, #111111, #00264d, #111111);
+}
+
+label {
+	text-decoration: underline;
+	font-style: italic;
+	font-size: clamp(1.2em, 17px, 1.9em);
+	color: yellow;
+}
+
+.inp {
+	border: 1px solid black;
+	border-radius: 6px;
+	margin-left: 3%;
+	font-size: 1em;
+	background: transparent;
+}
+
+/* when inputting data */
+.inp:focus {
+	background: linear-gradient(10deg, #001a33, #001356);
+	color: white;
+	outline: none;
+	border: 2px solid skyblue;
+}
+
+/* For showing/hide password class icon */
+.password-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translate(-330%,-129%);
+    width: 20px;
+    color: #f9f9f9;
+    transition: all 0.2s;
+    right: 20px;
+}
+
+.password-icon .fa-eye-slash {
+    display: none;
+}
+
+.password-icon:hover {
+    cursor: pointer;
+    color: #ff4754;
+}
+
+/* radio button */
+label input {
+	margin-left: 15%;
+}
+
+@media only screen and (max-width: 700px) , (min-height: 1000px) {
+	.container{
+		top: 4%;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+		border: none; 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+	}
+	td label {font-size: 1.4em;}
+	.image {height: 16vh; width: 24vw; margin: 8%; left: 0;}
+	fieldset {margin: 0;}
+	.contacts {
+		width: 40%;
+		position: absolute;
+		top: 100%;
+		bottom: 10%;
+		left: 30%;
+	}
+	.password-icon {  right: 1.67em;}
+	.password-icon {  right: 1.67em;}
+}
+
+fieldset button {
+	text-align: center;
+	font-size: 1.3em;
+	color: yellow;
+	background: linear-gradient(10deg, #001a33, #003366);
+	width:100%;
+	margin-top: 9%;
+	padding: 2%;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background color 0.5s linear;
+}
+
+fieldset button:hover {
+	background: linear-gradient(30deg, black, #171890, black);
+	color: white;
+}
+
+/* class for validation by JS */
+.text-success, .text-danger {
+	position: relative;
+	left: 3%;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 0.82em;
+}
+
+.text-success {
+	color: palegreen;
+}
+
+.text-danger {
+	color: red;
+}
+

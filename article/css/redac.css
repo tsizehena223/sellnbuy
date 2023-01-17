@@ -1,0 +1,61 @@
+.redac body {
+	background: linear-gradient(0, black, rgb(15, 16, 80), black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.redac h1 {
+	box-sizing: border-box;
+	width: 40%;
+	position: relative;
+	left: 35%; 
+	color: yellow;
+}
+
+.redac span {
+	position: fixed;
+	background-color: rgb(34, 110, 34);
+	color: aliceblue;
+	margin: auto;
+	top: 2px;
+}
+
+.redac fieldset{
+	color:yellow;
+	line-height: 1cm;
+	border: 3px solid #115E5E;
+	border-radius: 20px;
+	width: 10%;
+	background: linear-gradient(10deg, #111111, #00264d, #111111);
+	/* display: grid; */
+	line-height: normal;
+}
+
+.redac .container {   
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.redac textarea{
+	resize: none;
+}
+
+.redac button {
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	color: yellow;
+	width: 100px;
+	border: 1px solid black;
+	border-radius: 20px;
+	position: relative;
+	left: 30%;
+	cursor: pointer;
+	background: linear-gradient(40deg, black, rgb(16,15,80), black);
+}
+
+.redac button:hover{
+	transform: scale(1.2);
+}

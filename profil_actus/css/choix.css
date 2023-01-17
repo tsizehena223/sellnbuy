@@ -1,0 +1,144 @@
+*{
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	list-style: none;
+}
+
+body{
+	background: linear-gradient(135DEG,black,rgb(15, 16, 80),black);
+	color: antiquewhite;
+	font-style: poppins sans-serif;
+}
+
+fieldset{
+	text-align: center;
+	width: 38%;
+	border-radius: 3%;
+	background: linear-gradient(10deg, #111111, #00264d, #111111);
+	height: 30em;
+	max-height: 1000px;
+	margin: 2.3em auto;
+	box-shadow: 3px 4px 10px black;
+	animation: move 4s ease forwards;
+}
+
+@keyframes move {
+	0%{transform: translateY(-18em) scale(0.4);}
+	50%{transform: translateY(7em) scale(1.08);}
+	100%{transform: translateY(0) scale(1.0);}
+}
+
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+ul li{
+	display: flex;
+	border: silver solid 2px;
+	border-radius: 8%;
+	padding: 2%;
+	transition: all 0.2s ease;
+}
+
+ul li:hover{
+	background-color: #0a2F4d;
+	transform: scale(1.05);
+}
+
+input[type=checkbox]{
+	cursor: pointer;
+}
+
+p{
+	font-size: 1.4em;
+	margin: 0.3em 0 1.7em 0;
+}
+
+label{
+	font-size: 1.2em;
+	margin-left: 6%;
+}
+
+img{
+	height: 30%;
+	width: 30%;
+	border-radius: 50%;
+	transition: all 1s ease;
+}
+
+img:hover{
+	transform: rotateY(25deg) scale(1.08);
+}
+
+input[type=submit]{
+	font-size: 1.57em;
+	font-style: poppins sans-serif;
+	padding: 1%;
+	margin-top: 1.3em;
+	border-radius: 10%;
+	transition: all 0.2s ease;
+	background: transparent;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	color: white;
+	background-color: hsl(207, 52%, 12%);
+	transform: scale(1.1);
+}
+
+.contacts {
+	color: white;
+	width: 30%;
+	position: relative;
+	left: 4%;
+	margin: 6% 6% 0 0;
+	font-size: 1.2em;
+}
+
+.contacts img {
+	height: 16%;
+	width: 16%;
+	border-radius: 50%;
+}
+
+.contacts{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	left: 36.5%;
+} 
+
+/* To align elements between li tags */
+.item {
+	display: flex;
+} 
+
+.item img {
+	margin: 0 4% 4% 0;
+}
+
+a {
+	color: white;
+	font-style: italic;
+	transition: all .2s ease;
+}
+
+.h3{
+	text-align: center;
+	font-style: italic;
+	font-family: Poppins, sans-serif;
+	color: white;
+	font-size: .95em;
+}
+
+a:hover {
+	color: yellow;
+	transform: scale(1.1);
+}
+

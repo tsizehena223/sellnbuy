@@ -1,0 +1,12 @@
+/* css recherche */
+.resultats {
+    background: linear-gradient(0, black, #161580, black);
+    color: aliceblue;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.resultats a {
+    color: aliceblue;
+}

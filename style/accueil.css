@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+}
+
+#header {
+    display: flex;
+    border: none; 
+    background: linear-gradient(200deg,black, rgb(16, 15, 80), black);
+}
+
+.navi {
+    margin: auto;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.name {
+    color: yellow;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin : auto;
+}
+
+.signup {
+    background: linear-gradient(80deg, black, rgb(16, 15, 80), black);
+    color: yellow;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+}
+
+.signup:hover {
+    background: linear-gradient(0deg, yellow, black, yellow);
+    color: yellow;
+}
+.photo {
+    background-image: url('../img/fond1.jpg');
+    height: max-content;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    justify-content: justify;
+    color: yellow;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+h3, h4{
+    text-align: center;
+}
+
+.aside {
+    color: rgb(153, 147, 147);
+}
+
+footer {
+    text-align: center;
+    color: rgb(163, 204, 67);
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+.aside {
+    background: linear-gradient(200deg,black, rgb(16, 15, 80), black);
+}
+
+.col-sm-4 {
+    text-align: center;
+}
+
+.fa {
+    padding: 1px;
+    font-size: 15px;
+    width: 5px;
+    text-decoration: none;
+    margin: 5px 8px;
+} 
+code {
+    background: linear-gradient(200deg, black, rgb(16, 15, 80), rgb(20, 109, 54));
+    color: rgb(153, 147, 147);
+}
+
+.tiktok-color, .fb-color, .insta-color, .mail-color {
+    color: blue;
+}
+
+.logo {
+    margin-left: 17%;
+}

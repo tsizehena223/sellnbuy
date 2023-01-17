@@ -1,0 +1,95 @@
+body{
+    background: linear-gradient(0,black, #151680, black); 
+}
+
+fieldset{
+	text-align: center;
+    top: 15px !important;
+	width: 40%;
+	border-radius: 3%;
+	background: linear-gradient(10deg, #111111, #00264d, #111111);
+	height: 530px;
+	max-height: 1000px;
+	margin:  3e auto;
+	box-shadow: 3px 4px 10px black;
+    padding: 10px;
+    
+    position: relative;
+    left: 33%;
+}
+img{
+    position: relative;
+    left: 40%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+}
+
+.btn {
+    position: fixed;
+    right: 2%;
+    background: linear-gradient(0, yellow, black, yellow) !important;
+}
+
+.yes {
+    font-size: 30px;
+    color: yellow;
+    margin: 0%;
+}
+
+.btn-success {
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgb(16,15,80), black, rgb(16,15,80));
+    color: aliceblue;
+    font-size: large;
+}
+
+.btn-success:hover {
+    cursor: pointer;
+    background: linear-gradient(0, yellow, black, yellow) !important;
+}
+@media screen and (max-width: 600px){
+    fieldset{
+        text-align: center;
+        top: 15px !important;
+        width: 40%;
+        border-radius: 3%;
+        background: linear-gradient(10deg, #111111, #00264d, #111111);
+        height: 440px;
+        max-height: 1000px;
+        margin:  3e auto;
+        box-shadow: 3px 4px 10px black;
+        padding: 10px;
+        
+        position: relative;
+        left: 10%;
+    }
+    img{
+    position: relative;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    }
+
+    .yes {
+        font-size: 10px;
+        color: yellow;
+        margin: 0%;
+    }
+
+    .btn-success {
+        height: 20px;
+        width: 50px;
+        border-radius: 5px;
+        background: linear-gradient(0deg, rgb(16,15,80), black, rgb(16,15,80));
+        color: aliceblue;
+        font-size: 10px;
+    }
+
+    .btn-success:hover {
+        background: linear-gradient(0deg, black, rgb(16,15,80), black);
+    }
+}
