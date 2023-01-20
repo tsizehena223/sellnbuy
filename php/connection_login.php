@@ -4,7 +4,7 @@
 
     require_once "../php/message.php";
     if (session_status() == PHP_SESSION_NONE) { session_start();};
-    $conn = new PDO ("mysql:host=localhost; dbname=sb_signin; ", "root", "");
+    $conn = new PDO ("mysql:host=localhost; dbname=sb_signin; ", "root", "Tsizehena,223");
     if (isset($_POST["login"])) {
         if (!empty($_POST["pseudo"]) && !empty($_POST["psw"])) {
             $pseudo = htmlspecialchars($_POST["pseudo"]);
@@ -23,4 +23,3 @@
         }
     } 
     $conn = null;
-?>
