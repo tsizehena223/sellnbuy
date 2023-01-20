@@ -4,7 +4,7 @@
 
     require 'inclure_class.php';
 
-    $db = new PDO ("mysql:host=localhost; dbname=sb_signin", "root", "");
+    $db = new PDO ("mysql:host=localhost; dbname=sb_signin", "root", "Tsizehena,223");
     $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $gerer = new articles_manager($db);
@@ -27,5 +27,4 @@
             echo 'error';
             header('Location: publier.php');
         }
-    } 
-?>
+    }

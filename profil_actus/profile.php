@@ -54,7 +54,7 @@ if (isset($valider) && !empty(trim($keywords))) {
     $words = explode(" ", trim($keywords));
     for ($i = 0; $i < count($words); $i++)
         $kw[$i] = "contenu LIKE '%" . $words[$i] . "%'";
-    $bdd = new PDO("mysql:host=localhost; dbname=sb_signin", "root", "");
+    $bdd = new PDO("mysql:host=localhost; dbname=sb_signin", "root", "Tsizehena,223");
     $res = $bdd->prepare("SELECT * FROM articles WHERE " . implode(" OR ", $kw));
     $res->setFetchMode(PDO::FETCH_ASSOC);
     $res->execute();
@@ -82,7 +82,7 @@ if (isset($valider) && !empty(trim($keywords))) {
             <div class="navbar-left">
                 <a href="actu.php?id=<?= $article['id'] ?>" class="logo"><img src="images/logo.png"></a>
                 <div class="search-box">
-                    <img src="images/search.png">
+                    <img src="images/display.png">
                     <input type="text" name="keywords" value="<?= $keywords ?>" maxlength="40">
                     <input type="submit" value="Search" name="valider">
                 </div>
@@ -249,11 +249,11 @@ if (isset($valider) && !empty(trim($keywords))) {
             if (btnFollow.innerHTML != 'Followed') {
                 btnFollow.innerHTML = 'Followed';
             } else {
-                btnFollow.innerHTML = '<img src="images/connect.png"><span>Follow</span>';
+                btnFollow.innerHTML = '<img src="images/network.png"><span>Follow</span>';
             }
         });
     </script>
-    <script src="Js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

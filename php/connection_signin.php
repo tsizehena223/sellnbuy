@@ -4,7 +4,7 @@
 
     require 'inclure_class.php';
 
-    $db = new PDO ("mysql:host=localhost; dbname=sb_signin", "root", "");
+    $db = new PDO ("mysql:host=localhost; dbname=sb_signin", "root", "Tsizehena,223");
     $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $manager = new users_manager($db);
@@ -26,5 +26,3 @@
             header('Location: ../otherpages/login/html/signin.php');
         }
     }
-
-?>
