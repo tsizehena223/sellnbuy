@@ -6,3 +6,5 @@ Objectif :
 - rendre sellnbuy plus sécurisé et plus professionnel
 
 Bref, on a codé n'importe comment mais c'est le début donc.
+
+Quelques captures d'écran sont dans le dossier démonstration
